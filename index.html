@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="relative">
     <section id="resume">
       <div class="r_wrapper">
         <div class="name">
@@ -308,5 +308,16 @@
       </span>
       <span class="font-bold text-teal-900">still work in progress!</span>
     </div>
+
+    <div id="triangle-down" class="animate-bounce"></div>
   </body>
 </html>
+
+<script>
+  const body = document.querySelector("body");
+  console.log(body);
+  body.addEventListener("scroll", (e) => {
+    console.log("hi");
+    console.log(e);
+  });
+</script>
